@@ -1,0 +1,715 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* STYLE LOGIN */
+.layout-login {
+    background-color: #2a2e34;
+    width: 40%;
+    height: max-content;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.layout-login h2 {
+    color: #f1f1f1;
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 5%;
+    letter-spacing: 1px;
+}
+
+.layout-login form input[type = text],
+form input[type = password],
+form select,
+form input[type = email] {
+    outline: none;
+    border: 1px solid salmon;
+    background-color: transparent;
+    color: #f1f1f1;
+    width: 300px;
+    border-radius: 5px;
+    margin-top: 2%;
+    padding: 7px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.layout-login form input[type = submit] {
+    outline: none;
+    border: 0;
+    background-color: salmon;
+    color: #000;
+    transition: 0.25s;
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 5%;
+    font-size: 15px;
+    letter-spacing: 1px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.layout-login form input[type = submit]:hover {
+    background-color: #000;
+    color: salmon;
+}
+
+.layout-login a {
+    text-decoration: none;
+    color: salmon;
+    letter-spacing: 1px;
+    transition: 0.25s;
+}
+
+.layout-login a:hover {
+    color: #f1f1f1;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ANIMATION TYPING */
+.kananberanda .animationTyping {
+    width: 32ch;
+    font-size: 35px;
+    padding-bottom: 1%;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    color: salmon;
+    animation: tote 2s steps(45), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+}
+
+@keyframes tote {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* STYLE UNTUK NAVBAR */
+.topnav {
+    overflow: hidden;
+    background-color: #2a2e34;
+}
+  
+.topnav a {
+    font-family: sans-serif;
+    float: left;
+    display: block;
+    color: salmon;
+    text-align: center;
+    font-weight: bold;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.25s;
+}
+  
+.topnav a:hover {
+    color: #f1f1f1;
+}
+  
+.topnav .icon {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* BERANDA */
+#beranda {
+    height: 100vh;
+    width: 100%;
+}
+
+.kiriberanda {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.kiriberanda img {
+    width: 250px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.kananberanda {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.layoutKananBeranda {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.layoutKananBeranda p {
+    color: #f1f1f1;
+    width: 80%;
+    letter-spacing: 1px;
+    line-height: 25px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* TENTANG SAYA */
+#tentangsaya {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: #2a2e34;
+    flex-direction: row-reverse;
+}
+
+.gambarTentangSaya {
+    width: 50%;
+    height: 100%;
+}
+
+.gambarTentangSaya img {
+    width: 450px;
+    border-radius: 10px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.textTentangSaya {
+    width: 50%;
+    height: 100%;
+}
+
+.textTentangSaya p {
+    color: #f1f1f1;
+    padding: 15px;
+    width: 80%;
+    letter-spacing: 1px;
+    line-height: 25px;
+    border-radius: 10px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* STYLE PETA */
+#peta {
+    background-color: #000;
+    height: 100vh;
+}
+
+.layout-peta {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.layout-peta a {
+    background-color: #2a2e34;
+    color: salmon;
+    text-decoration: none;
+    padding: 10px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    transition: 0.25s;
+}
+
+.layout-peta a:hover {
+    color: #f1f1f1;
+}
+
+.kiri-nav-peta {
+    float: left;
+    width: 50%;
+}
+
+.kanan-nav-peta {
+    float: left;
+    width: 50%;
+}
+
+#layout-form-input .layout-peta-form {
+    background-color: #2a2e34;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 90%;
+    height: max-content;
+    text-align: center;
+    position: relative;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -0%);
+}
+
+#layout-form-input .layout-peta-form .item-input {
+    background-color: #000;
+    padding: 10px;
+    width: max-content;
+}
+
+#layout-form-input .layout-peta-form input[type = text],
+form input[type = date],
+form input[type = file],
+form textarea {
+    margin-top: 2%;
+    background-color: #000;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    color: salmon;
+    outline: none;
+    width: 450px;
+    border: 0;
+    padding: 7px;
+}
+
+#layout-form-input .layout-peta-form form input[type = submit] {
+    outline: none;
+    border: 0;
+    background-color: #000;
+    color: salmon;
+    cursor: pointer;
+    padding: 7px;
+    width: 150px;
+    border-radius: 5px;
+    transition: 0.25s;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+#layout-form-input .layout-peta-form form input[type = submit]:hover {
+    color: #f1f1f1;
+}
+  
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(100%);
+}
+
+::placeholder {
+    color: salmon;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* KONTAK */
+#kontak {
+    width: 100%;
+    background-color: #2a2e34;
+    height: 100vh;
+}
+
+.kirikontak {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.kirikontak img {
+    width: 450px;
+    border-radius: 10px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.kanankontak {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.layoutform-kontak {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.layoutform-kontak form input[type = text], textarea {
+    width: 400px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    outline: none;
+    border: none;
+    background-color: #000;
+    color: salmon;
+    font-size: 14px;
+    margin: 3px;
+    padding: 5px 10px 5px 10px;
+}
+
+.layoutform-kontak input[type = submit] {
+    padding: 5px 10px 5px 10px;
+    margin-top: 2%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #2a2e34;
+    background-color: salmon;
+    transition: 0.25s;
+}
+
+.layoutform-kontak input[type = submit]:hover {
+    background-color: #000;
+    color: #f1f1f1;
+}
+
+.layoutform-kontak textarea {
+    height: 200px;
+}
+
+.layoutform-kontak ul li {
+    display: inline-block;
+    margin: 2%;
+}
+
+.layoutform-kontak ul li a img {
+    width: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* STYLE TABEL PETA */
+.table {
+    border-collapse: collapse;
+    width: 50%;
+    border: 1px solid #1e2328;
+    position: relative;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.table tr th {
+    background: #0c3b2e;
+    color: #fdb095;
+    font-weight: normal;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.table tr td {
+    color: #f1f1f1;
+    padding: 8px 20px;
+    text-align: center;
+}
+
+.table tr {
+    transition: 0.5s;
+}
+
+.table .tombol {
+    color: salmon;
+    letter-spacing: 1px;
+    font-size: 15px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.table .tombol:hover {
+    cursor: pointer;
+    color: #f1f1f1;
+}
+
+.table tr:hover {
+    background-color: #3b3f46;
+}
+
+.table tr:nth-child(even) {
+    background-color: #3b3f46;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* STYLE PROFILE */
+.layout-profile {
+    height: 92vh;
+    width: 100%;
+    color: #f1f1f1;
+}
+
+.layout-profile .item-profile {
+    background-color: #1e2328;
+    width: 90%;
+    height: 60%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+}
+
+.item-profile h2 {
+    letter-spacing: 1px;
+    color: salmon;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+    margin-left: 6%;
+}
+
+.item-profile input[type = text], input[type = password] {
+    outline: none;
+    border: 0;
+    background-color: #000;
+    color: #f1f1f1;
+    padding: 10px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    width: 85%;
+}
+
+.item-profile .kiri-profile,
+.kanan-profile {
+    float: left;
+    width: 50%;
+}
+
+.layout-btn-profile {
+    width: 95%;
+    position: relative;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -0%);
+}
+
+.layout-btn-profile .kiri-btn-profile,
+.kanan-btn-profile {
+    float: left;
+    width: 50%;
+}
+
+.layout-btn-profile button {
+    padding: 10px;
+    background-color: #000;
+    color: salmon;
+    letter-spacing: 1px;
+    outline: none;
+    border: 0;
+    font-size: 20px;
+    width: 200px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.layout-btn-profile button:hover {
+    color: #f1f1f1;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* STYLE ADMIN */
+.layout-submenu-admin {
+    height: 100vh;
+}
+
+.item-btn-submenu {
+    background-color: #1e2328;
+    height: 140px;
+    border-radius: 5px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    padding: 20px;
+}
+
+.item-btn-submenu button {
+    outline: none;
+    margin-top: 4%;
+    width: 250px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 17px;
+    color: salmon;
+    border: 0;
+    background-color: #000;
+    transition: 0.25s;
+    letter-spacing: 1px;
+}
+
+.item-btn-submenu button:hover {
+    color: #f1f1f1;
+}
+
+.kiri-submenu, .kanan-submenu {
+    float: left;
+    width: 50%;
+    height: max-content;
+    text-align: center;
+}
+
+.layout-filter-admin form select {
+    background-color: #1e2328;
+    border-color: #1e2328;
+    margin-right: 10%;
+}
+
+.layout-filter-admin form input[type = search] {
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 500px;
+    letter-spacing: 1px;
+    color: #f1f1f1;
+    border: 0;
+    margin-right: 10%;
+    background-color: #1e2328;
+}
+
+.layout-filter-admin form input[type = submit] {
+    cursor: pointer;
+    background-color: #1e2328;
+    color: salmon;
+    transition: 0.25s;
+    padding: 10px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    margin-right: 2%;
+}
+
+.layout-filter-admin form a {
+    text-decoration: none;
+    color: salmon;
+    border-radius: 5px;
+    background-color: #1e2328;
+    padding: 10px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    transition: 0.25s;
+}
+
+.layout-filter-admin form input[type = submit]:hover,
+form a:hover {
+    color: #f1f1f1;
+}
